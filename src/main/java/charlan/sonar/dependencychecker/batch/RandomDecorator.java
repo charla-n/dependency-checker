@@ -1,4 +1,4 @@
-package com.mycompany.sonar.reference.batch;
+package charlan.sonar.dependencychecker.batch;
 
 import org.apache.commons.lang.math.RandomUtils;
 import org.sonar.api.batch.Decorator;
@@ -8,7 +8,7 @@ import org.sonar.api.resources.Project;
 import org.sonar.api.resources.Resource;
 import org.sonar.api.resources.ResourceUtils;
 
-import com.mycompany.sonar.reference.ExampleMetrics;
+import charlan.sonar.dependencychecker.ExampleMetrics;
 
 public class RandomDecorator implements Decorator {
 

@@ -1,4 +1,4 @@
-package com.mycompany.sonar.reference;
+package charlan.sonar.dependencychecker;
 
 import java.util.Arrays;
 import java.util.List;

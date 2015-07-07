@@ -54,7 +54,7 @@
         <version>1.13</version>
         <extensions>true</extensions>
         <configuration>
-          <pluginClass>com.mycompany.sonar.reference.ExamplePlugin</pluginClass>
+          <pluginClass>charlan.sonar.dependencychecker.DependencyChecker</pluginClass>
         </configuration>
       </plugin>
       <plugin>

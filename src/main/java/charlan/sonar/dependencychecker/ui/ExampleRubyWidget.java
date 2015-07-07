@@ -1,4 +1,4 @@
-package com.mycompany.sonar.reference.ui;
+package charlan.sonar.dependencychecker.ui;
 
 import org.sonar.api.web.AbstractRubyTemplate;
 import org.sonar.api.web.Description;

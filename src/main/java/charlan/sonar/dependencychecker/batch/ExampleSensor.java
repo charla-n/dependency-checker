@@ -1,6 +1,10 @@
-package com.mycompany.sonar.reference.batch;
+package charlan.sonar.dependencychecker.batch;
 
 import org.sonar.api.utils.log.*;
+
+import charlan.sonar.dependencychecker.ExampleMetrics;
+import charlan.sonar.dependencychecker.DependencyChecker;
+
 import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
 import org.sonar.api.batch.fs.FileSystem;
@@ -8,9 +12,6 @@ import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.config.Settings;
 import org.sonar.api.measures.Measure;
 import org.sonar.api.resources.Project;
-
-import com.mycompany.sonar.reference.ExampleMetrics;
-import com.mycompany.sonar.reference.ExamplePlugin;
 
 public class ExampleSensor implements Sensor {
 
@@ -36,11 +37,11 @@ public class ExampleSensor implements Sensor {
   @Override
   public void analyse(Project project, SensorContext sensorContext) {
     // This sensor create a measure for metric MESSAGE on each Java file
-    String value = settings.getString(ExamplePlugin.MY_PROPERTY);
-    LOG.info(ExamplePlugin.MY_PROPERTY + "=" + value);
-    for (InputFile inputFile : fs.inputFiles(fs.predicates().hasLanguage("java"))) {
-      sensorContext.saveMeasure(inputFile, new Measure<String>(ExampleMetrics.MESSAGE, value));
-    }
+//    String value = settings.getString(DependencyChecker.MY_PROPERTY);
+//    LOG.info(DependencyChecker.MY_PROPERTY + "=" + value);
+//    for (InputFile inputFile : fs.inputFiles(fs.predicates().hasLanguage("java"))) {
+//      sensorContext.saveMeasure(inputFile, new Measure<String>(ExampleMetrics.MESSAGE, value));
+//    }
   }
 
   @Override
